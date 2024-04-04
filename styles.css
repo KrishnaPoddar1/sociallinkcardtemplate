@@ -1,0 +1,129 @@
+
+@font-face {
+    font-family: "Inter";
+    src: url(assets/fonts/Inter-VariableFont_slnt,wght.ttf);
+    font-variation-settings: "wght" 400;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(assets/fonts/Inter-VariableFont_slnt,wght.ttf);
+    font-variation-settings: "wght" 600;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(assets/fonts/Inter-VariableFont_slnt,wght.ttf);
+    font-variation-settings: "wght" 700;
+}
+
+:root {
+
+    --ff-main: "Inter", sans-serif;
+    --fw-normal: 400;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    --primary-green: hsl(75, 94%, 57%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-grey: hsl(0, 0%, 20%);
+    --neutral-dark-grey: hsl(0, 0%, 12%);
+    --neutral-off-black: hsl(0, 0%, 8%);
+
+    --fontsize-paragraph: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-main);
+    background-color: black;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 16.5rem;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 0.9rem;
+    background-color: var(--neutral-off-black);
+    color: var(--neutral-white);
+}
+
+p {
+    font-size: var(--fontsize-paragraph);
+}
+
+.user-info {
+    text-align: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    max-width: 60px;
+    margin-top: 0.5rem;
+}
+
+.user-info h3 {
+    font-weight: var(--fw-bold);
+    margin-top: 1.5rem;
+}
+
+.user-info p {
+    font-weight: var(--fw-normal);
+    color: var(--primary-green);
+    margin-top: 0.5rem;
+    font-size: 12px;
+}
+
+.about {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 11px;
+    padding: 0 0.9rem;
+    font-weight: var(--fw-normal);
+}
+
+button {
+    display: block;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin: 0.9rem 0.3rem;
+    width: 93%;
+    background-color: var(--neutral-grey);
+    color: var(--neutral-white);
+    font-weight: var(--fw-semibold);
+    font-size: 0.7rem;
+}
+
+button:hover {
+    background-color: var(--primary-green);
+    color: var(--neutral-off-black);
+    cursor: pointer;
+    font-weight: var(--fw-bold);
+}
+
+.card button:last-child {
+    margin-bottom: -0.01rem;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--neutral-white);
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
